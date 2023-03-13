@@ -334,8 +334,8 @@ const [contentToRender, setContentToRender] = useState(false);
   };
 
   return (
-    <div className="App container">
-      <div className="row hero">
+    <div className="App">
+      <div className="hero">
         <h1 className="text-center">.</h1>
       </div>
       <Menu
