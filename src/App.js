@@ -13,7 +13,7 @@ const panier = [
     },
     {
       page: 10,
-      lib: "",
+      lib: "A bien voir...",
       texteIndice: [
         "voir commerce",
         "restaurant au  nom  bleu",
@@ -22,7 +22,7 @@ const panier = [
     },
     {
       page: 14,
-      lib: "",
+      lib: "Liaisons dangereuses",
       texteIndice: [
         "molosse = Cabot",
         "reliez",
@@ -31,7 +31,7 @@ const panier = [
     },
     {
       page: 18,
-      lib: "",
+      lib: "Dessins trompeurs",
       texteIndice: [
         "Un supplément",
         "Utilisez  la  fiche alphabet fournie",
@@ -40,7 +40,7 @@ const panier = [
     },
     {
       page: 20,
-      lib: "",
+      lib: "Ce n'est pas un jeu, c'est une énigme",
       texteIndice: [
         "réutilisez",
         "l'alphabet",
@@ -49,12 +49,12 @@ const panier = [
     },
     {
       page: 24,
-      lib: "",
-      texteIndice: ["chanson", "hymne", "allons enfants de la patrie..."]
+      lib: "Diapason",
+      texteIndice: ["Chanson", "Hymne", "Allons enfants de la patrie..."]
     },
     {
       page: 27,
-      lib: "",
+      lib: "Invitation",
       texteIndice: [
         "Regardez  par la fenetre  !",
         "Et retournez",
@@ -63,7 +63,7 @@ const panier = [
     },
     {
       page: 30,
-      lib: "",
+      lib: "Goûts & couleurs",
       texteIndice: [
         "Rose, noir",
         "Vert, bleu",
@@ -72,16 +72,16 @@ const panier = [
     },
     {
       page: 34,
-      lib: "",
+      lib: "Graffiti poête",
       texteIndice: [
-        "suivez l’indication du dessin",
+        "Suivez l’indication du dessin",
         "Tournez",
         "Pagnol"
       ]
     },
     {
       page: 36,
-      lib: "",
+      lib: "N'y tombez pas !",
       texteIndice: [
         "Trouvez le puit devant la vielle charité",
         "Un  puit grec entre 2 et 3 metres",
@@ -90,56 +90,56 @@ const panier = [
     },
     {
       page: 39,
-      lib: "",
+      lib: "Des fenêtres",
       texteIndice: [
-        "Imaginez les dés posés sur un plaque en verre",
-        "Additionnez est inversé, lisible du dessous",
+        "Quand c'est bouché la lumière ne passe pas",
+        "Gardez les vrais fenêtres pour les vrais lettres",
         "miaulement"
       ]
     },
     {
       page: 41,
-      lib: "",
+      lib: "Des hôtels",
       texteIndice: [
-        "1: Clément",
-        "2: Doms, 3: Salamandre",
+        "3: Ville (Hôtel de.)",
+        "5: Vielle charité",
         "Olive"
       ]
     },
     {
       page: 43,
-      lib: "",
-      texteIndice: ["Cherchez sur place", "Cadenas au niveau du poteau", "bonneterie"]
+      lib: "Coin coin",
+      texteIndice: ["Faux noms", "Des plaques inversés ?", "bonneterie"]
     },
     {
       page: 50,
-      lib: "",
+      lib: "Promenade dans le temps",
       texteIndice: [
-        "Melangez",
-        "Jaune et bleu donne du vert",
+        "Trouvez la maquette",
+        "Suivez le chemin sans bouger !",
         "La terrasse funéraire"
       ]
     },
     {
       page: 52,
-      lib: "",
-      texteIndice: ["Nord vaut 'N'", "Ginette & Marcel sont au nord", "Trabuc"]
+      lib: "Une énigme marquante",
+      texteIndice: ["Deux points communs", "Des commerces", "Trabuc"]
     },
     {
       page: 53,
-      lib: "",
+      lib: "Un peu de géographie",
       texteIndice: [
-        "Des fruits de pierre",
-        "Qui parfois contiennent des pignons",
+        "Trouvez une caisse en bois",
+        "Avec un gros globe terrestre dedans",
         "La lettre A"
       ]
     },
     {
       page: 55,
-      lib: "",
+      lib: "Avant dernière énigme !",
       texteIndice: [
-        "Trouvez la plaque qui ressemble au dessin",
-        "Six lettres à déduire",
+        "L'arme était Excalibur",
+        "L'epée plantée",
         "A.Lauro"
       ]
     },
@@ -147,8 +147,8 @@ const panier = [
       page: 57,
       lib: "Dernière énigme !",
       texteIndice: [
-        "Plus je suis chaud, plus je suis frais. On me mange.",
-        "Un aliment quotidien bien français",
+        "Trouvez les points communs",
+        "A chaque syllabe de la réponse correspond un point commun",
         "Jo est à Porto Vecchio !"
       ]
     }
