@@ -433,18 +433,8 @@ const sif = [
       }
     ];
 const params = new URLSearchParams(window.location.search);
-//const tabEnigmes = ((params.get("vi") === "avi") ? avi : sif);
-//const tabEnigmes = panier;
+const tabEnigmes = ((params.get("vi") === "avi") ? avi : sif);
 /*
-const tabEnigmes = () => {
-  switch(params.get("vi")) {
-    case "avi":
-      return avi;
-    default:
-      return sif;
-  }
-};*/
-
 const enigmeParam = params.get("vi");
 const enigmeOptions = {
   "avi": avi,
@@ -452,7 +442,9 @@ const enigmeOptions = {
   "panier": panier,
 };
 const tabEnigmes = (enigmeOptions.hasOwnProperty(enigmeParam)) ? enigmeOptions[enigmeParam] : "avi";
-
+if (!tabEnigmes) {
+  tabEnigmes = enigmeOptions.avi; // Valeur par défaut si aucune option valide n'est spécifiée
+}*/
 
 const [currentPage, setCurrentPage] = useState("");
 const [historyNav, setHistoryNav] = useState([
