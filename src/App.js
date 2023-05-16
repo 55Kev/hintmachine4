@@ -5,6 +5,155 @@ import Menu from "./components/Menu";
 import Content from "./components/Content";
 
 export default function App() {
+const panier = [
+    {
+      page: 8,
+      lib: "Première énigme !",
+      texteIndice: ["coordonnées", "coordonnées des mots - lettres", "Bocal"]
+    },
+    {
+      page: 10,
+      lib: "",
+      texteIndice: [
+        "voir commerce",
+        "restaurant au  nom  bleu",
+        "Hippocampe"
+      ]
+    },
+    {
+      page: 14,
+      lib: "",
+      texteIndice: [
+        "molosse = Cabot",
+        "reliez",
+        "La  lettre   T"
+      ]
+    },
+    {
+      page: 18,
+      lib: "",
+      texteIndice: [
+        "Un supplément",
+        "Utilisez  la  fiche alphabet fournie",
+        "Pavill (on Daviel)"
+      ]
+    },
+    {
+      page: 20,
+      lib: "",
+      texteIndice: [
+        "réutilisez",
+        "l'alphabet",
+        "Jaune"
+      ]
+    },
+    {
+      page: 24,
+      lib: "",
+      texteIndice: ["chanson", "hymne", "allons enfants de la patrie..."]
+    },
+    {
+      page: 27,
+      lib: "",
+      texteIndice: [
+        "Regardez  par la fenetre  !",
+        "Et retournez",
+        "Projet"
+      ]
+    },
+    {
+      page: 30,
+      lib: "",
+      texteIndice: [
+        "Rose, noir",
+        "Vert, bleu",
+        "Lettres entourées réponse: suivre"
+      ]
+    },
+    {
+      page: 34,
+      lib: "",
+      texteIndice: [
+        "suivez l’indication du dessin",
+        "Tournez",
+        "Pagnol"
+      ]
+    },
+    {
+      page: 36,
+      lib: "",
+      texteIndice: [
+        "Trouvez le puit devant la vielle charité",
+        "Un  puit grec entre 2 et 3 metres",
+        "La lettre D"
+      ]
+    },
+    {
+      page: 39,
+      lib: "",
+      texteIndice: [
+        "Imaginez les dés posés sur un plaque en verre",
+        "Additionnez est inversé, lisible du dessous",
+        "miaulement"
+      ]
+    },
+    {
+      page: 41,
+      lib: "",
+      texteIndice: [
+        "1: Clément",
+        "2: Doms, 3: Salamandre",
+        "Olive"
+      ]
+    },
+    {
+      page: 43,
+      lib: "",
+      texteIndice: ["Cherchez sur place", "Cadenas au niveau du poteau", "bonneterie"]
+    },
+    {
+      page: 50,
+      lib: "",
+      texteIndice: [
+        "Melangez",
+        "Jaune et bleu donne du vert",
+        "La terrasse funéraire"
+      ]
+    },
+    {
+      page: 52,
+      lib: "",
+      texteIndice: ["Nord vaut 'N'", "Ginette & Marcel sont au nord", "Trabuc"]
+    },
+    {
+      page: 53,
+      lib: "",
+      texteIndice: [
+        "Des fruits de pierre",
+        "Qui parfois contiennent des pignons",
+        "La lettre A"
+      ]
+    },
+    {
+      page: 55,
+      lib: "",
+      texteIndice: [
+        "Trouvez la plaque qui ressemble au dessin",
+        "Six lettres à déduire",
+        "A.Lauro"
+      ]
+    },
+    {
+      page: 57,
+      lib: "Dernière énigme !",
+      texteIndice: [
+        "Plus je suis chaud, plus je suis frais. On me mange.",
+        "Un aliment quotidien bien français",
+        "Jo est à Porto Vecchio !"
+      ]
+    }
+  ];
+
 const avi = [
     {
       page: 9,
@@ -284,7 +433,26 @@ const sif = [
       }
     ];
 const params = new URLSearchParams(window.location.search);
-const tabEnigmes = ((params.get("vi") === "avi") ? avi : sif);
+//const tabEnigmes = ((params.get("vi") === "avi") ? avi : sif);
+//const tabEnigmes = panier;
+/*
+const tabEnigmes = () => {
+  switch(params.get("vi")) {
+    case "avi":
+      return avi;
+    default:
+      return sif;
+  }
+};*/
+
+const enigmeParam = params.get("vi");
+const enigmeOptions = {
+  "avi": avi,
+  "sif": sif,
+  "panier": panier,
+};
+const tabEnigmes = (enigmeOptions.hasOwnProperty(enigmeParam)) ? enigmeOptions[enigmeParam] : "avi";
+
 
 const [currentPage, setCurrentPage] = useState("");
 const [historyNav, setHistoryNav] = useState([
